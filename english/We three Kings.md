@@ -55,4 +55,5 @@ Star with royal beauty bright,
 Westward leading, still proceeding,
 Guide us to thy perfect Light.
 ```
-`Entrance` `Recessional`
+
+`Entrance` `Recessional` `Epiphany`

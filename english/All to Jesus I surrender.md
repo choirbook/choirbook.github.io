@@ -29,4 +29,5 @@ Now I feel the sacred flame
 O the joy of full salvation
 Glory, glory to His name.
 ```
+
 `Offertory`

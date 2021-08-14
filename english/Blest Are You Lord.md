@@ -20,4 +20,5 @@ this wine we offer
 Fruit of the vine, work of our hands
 It will become the cup of joy.
 ```
+
 `Offertory`

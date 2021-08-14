@@ -18,6 +18,7 @@ parent: Hindi
 ख़ुशी मनाओ गाओ रे
 जन्मा है येसु राजा
 ```
-`Christmas` `Carol`
 
 ## Khushi manao gaao re
+
+`Christmas` `Carol`

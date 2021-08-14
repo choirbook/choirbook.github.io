@@ -14,5 +14,7 @@ parent: Hindi
 कृपा दया सागर, बरसाता प्रेम की फुहार
 गुमराह भेड़ों का बन जाता राखनहार
 ```
-`Offertory`
+
 ## Prabhu tere hi mandir mai
+
+`Offertory`

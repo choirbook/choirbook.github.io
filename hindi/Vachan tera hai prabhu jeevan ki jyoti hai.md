@@ -14,6 +14,7 @@ parent: Hindi
 भूख मिटाता है, अमर वचन तेरा
 प्यास बुझाता है मीठा वचन तेरा 2
 ```
-`Acclamation`
 
 ## Vachan tera hai prabhu jeevan ki jyoti hai
+
+`Acclamation`

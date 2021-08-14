@@ -30,4 +30,5 @@ Because He lives, all fear is gone
 Because I know-w-w He holds the future
 And life is worth a living, just because He lives
 ```
+
 `Communion`

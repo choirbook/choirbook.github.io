@@ -23,4 +23,5 @@ He took upon Himself the sins of the nation.
 He conquered sin and death, He truly has risen,
 And he will share with us his heavenly vision.
 ```
-`Psalm Sunday`
+
+`Palm Sunday`

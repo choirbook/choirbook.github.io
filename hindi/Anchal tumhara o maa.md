@@ -21,8 +21,6 @@ parent: Hindi
 हमारी भी बन तूही माता
 ```
 
-`Mother Mary` `Recessional`
-
 ## Anchal tumhara o maa
 ```
 Anchal tumhara o maa
@@ -40,3 +38,5 @@ Har din har pal tujh ko chadate
 Tu hi bani Yeshu Mata
 Hamari bhi ban tuhi Mata
 ```
+
+`Mother Mary` `Recessional`

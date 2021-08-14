@@ -31,4 +31,5 @@ Take it to the Lord in prayer;
 In His arms He'll take and shield thee
 Thou wilt find a solace there.
 ```
+
 `Entrance` `Recessional`

@@ -11,4 +11,5 @@ we proclaim your death, Lord Jesus,
 until you come,
 until you come in glory.
 ```
+
 `Proclamation`

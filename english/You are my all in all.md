@@ -29,4 +29,5 @@ Worthy is Your name
 Jesus, Lamb of God
 Worthy is Your name
 ```
+
 `Communion`
