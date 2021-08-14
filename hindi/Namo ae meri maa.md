@@ -5,17 +5,17 @@ parent: Hindi
 ---
 # Namo ae meri maa
 ```
-Namo ye meri ma,
-Namo ye meri ma,
+Namo ae meri ma,
+Namo ae meri ma,
 Manav mein jhanmi hai maa dhanya tu,
-Namo ye meri ma.
+Namo ae meri ma.
 
 Dhanya tu hai prabhu yeshu ki maa
-Naari jagath kit jyoti u hai maa
+Naari jagat ki jyoti tu hai maa
 Teri mahima ka gaan sada ho maa
 
-Teri sharan mein dhin jo aaye maa
-Paate dhanya ka dhan ye meri maa
-Sagar dhaya ka tu hai meri maa
+Teri sharan mein dheen jo aaye maa
+Paate daya ka daan ae meri maa
+Sagar daya ka tu hai meri maa
 ```
 `Mother Mary` `Recessional`
