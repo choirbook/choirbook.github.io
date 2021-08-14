@@ -30,7 +30,6 @@ Ashish deta sada se
 Anchal me humko rakhna
 Ashish dena sada hi
 
-
 Balak, vridh, yuva sabhi
 Jo bhi aaye dwaar tihare
 Sab ko tu deti sayaa
