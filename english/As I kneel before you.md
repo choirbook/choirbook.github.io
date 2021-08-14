@@ -36,4 +36,4 @@ Dominus tecum,
 Benedicta tu.
 ```
 
-`Entrance`
+`Recessional`
