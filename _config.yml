@@ -2,7 +2,10 @@ title: "Choir Book"
 remote_theme: pmarsceill/just-the-docs
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: light
+color_scheme: dark
+
+# Enable color scheme toggle
+color_scheme_toggle: true
 
 # Enable or disable the site search
 # Supports true (default) or false
