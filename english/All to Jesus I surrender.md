@@ -4,7 +4,7 @@ title: All to Jesus I surrender
 parent: English
 ---
 # All to Jesus I surrender
-```
+
 All to Jesus I surrender
 All to Him I freely give
 I will ever love and trust Him
@@ -28,6 +28,6 @@ All to Jesus I surrender
 Now I feel the sacred flame
 O the joy of full salvation
 Glory, glory to His name.
-```
+
 
 `Offertory`
