@@ -15,7 +15,4 @@ Upon his shoulders,
 I know, my brothers, that he will carry you.  
 If he carried the weight of the world,  
 Upon his shoulders  
-I know, my sister, that he will carry you.  
-
-He said, "Come unto me all who are wearied,  
-And I will give you rest".
+I know, my sister, that he will carry you.
