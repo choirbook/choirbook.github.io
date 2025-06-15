@@ -1,8 +1,8 @@
 ---
 tags:
-  - Entrance
+- Entrance
 ---
-  
+
 # यही दिवस है जिसे बनाया  
 
 === "Hindi"  
@@ -31,4 +31,4 @@ tags:
     Prasann mann se khushi manaven naache gaaven tan mann se  
 
     Yehi diwas hai jis din ham ne nav jeevan ka laabh liya  
-    Prasann mann se khushi manaven naache gaaven tan mann se  
+    Prasann mann se khushi manaven naache gaaven tan mann se

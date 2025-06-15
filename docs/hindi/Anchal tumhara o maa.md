@@ -1,11 +1,9 @@
 ---
 tags:
-  - Mother Mary
-  - Recessional
+- Mother Mary
+- Recessional
 ---
 
-
-  
 # अंचल तुम्हारा ओ माँ  
 
 === "Hindi"
@@ -40,4 +38,4 @@ tags:
     Jag ki janani he Mata Maria  
     Har din har pal tujh ko chadate  
     Tu hi bani Yeshu Mata  
-    Hamari bhi ban tuhi Mata  
+    Hamari bhi ban tuhi Mata

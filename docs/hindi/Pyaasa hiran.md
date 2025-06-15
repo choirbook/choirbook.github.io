@@ -1,10 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
 # प्यासा हिरन  
 
 === "Hindi"  
@@ -31,4 +29,4 @@ tags:
     Mann tere prem se bharata rahun main  
 
     Tu jo ban jaye shraddha suman  
-    Pushp parag sa jharta rahun main  
+    Pushp parag sa jharta rahun main

@@ -1,10 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
 # तू मेरा गीत है  
   
 === "Hindi"  
@@ -41,5 +39,4 @@ tags:
     Tu meri aasha  
     Tu mera preet hai  
     Jeevan ki haar mein  
-    Tu jeet hai    
-  
+    Tu jeet hai

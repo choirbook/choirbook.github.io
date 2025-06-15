@@ -1,8 +1,8 @@
 ---
 tags:
-  - Offertory
+- Offertory
 ---
-  
+
 # प्रभु तेरे ही मन्दिर में  
 
 === "Hindi"  
@@ -23,4 +23,4 @@ tags:
     Jeevan ke sankat mein, prabhu saath nibhata sada  
 
     Kripa daya saagar, barsata prem ki fuhar  
-    Gumrah bhedon ka ban jata raakhanhar  
+    Gumrah bhedon ka ban jata raakhanhar

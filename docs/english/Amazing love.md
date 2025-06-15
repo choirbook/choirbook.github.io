@@ -1,10 +1,7 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
-
-
-
 
 # Amazing Love
 
@@ -17,4 +14,4 @@ Amazing love, how can it be?
 That You, my King would die for me?  
 Amazing love, I know its true  
 It's my joy to honor You  
-In all I do, I honor You  
+In all I do, I honor You

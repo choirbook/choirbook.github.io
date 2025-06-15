@@ -1,10 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
 # In his time  
   
 In his time, In his time,  
@@ -30,4 +28,4 @@ Weeks and months we cannot understand God's ways.
 If for years we fail to scan  
 What is his eternal plan  
 We'll remember what he can all the time.  
-Whom shall I send?  
+Whom shall I send?

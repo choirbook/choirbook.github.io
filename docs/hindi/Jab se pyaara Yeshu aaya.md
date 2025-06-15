@@ -1,10 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
 # जब से प्यारा येसु आया  
   
 === "Hindi"  
@@ -25,5 +23,4 @@ tags:
     Mera dil, mera mann, meri kaaya, mera jeevan badal-badal gaya  
   
     Raat ka dil beet gaya, huwa savera ka subah tara  
-    Is liye, maine ye geet gaaya, mera jeevan badal-badal gaya  
-  
+    Is liye, maine ye geet gaaya, mera jeevan badal-badal gaya

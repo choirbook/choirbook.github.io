@@ -1,11 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
-  
 # As the deer  
   
 As the deer panteth for the water,  
@@ -26,4 +23,4 @@ And the apple of my eye.
 You're my friend and you are my brother,  
 Even though you are my Lord  
 I love you more than any other,  
-So much more than anything.  
+So much more than anything.

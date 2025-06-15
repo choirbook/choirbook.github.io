@@ -1,10 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
 # तेरे गीत गाऊँ  
 
 === "Hindi"  
@@ -31,4 +29,4 @@ tags:
     Tu hi mera maarg  
 
     Tu hi meri shanti prabhu  
-    Tu hi mera naath  
+    Tu hi mera naath

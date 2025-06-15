@@ -1,11 +1,9 @@
 ---
 tags:
-  - Entrance
-  - Palm Sunday
+- Entrance
+- Palm Sunday
 ---
 
-
-  
 # The King of glory  
   
 The King of glory comes, the nation rejoices;  
@@ -24,4 +22,4 @@ He gave His life for us, the lamb of salvation;
 He took upon Himself the sins of the nation.  
   
 He conquered sin and death, He truly has risen,  
-And he will share with us his heavenly vision.  
+And he will share with us his heavenly vision.

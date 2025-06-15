@@ -1,8 +1,8 @@
 ---
 tags:
-  - Entrance
+- Entrance
 ---
-  
+
 # आये प्रभु हम तेरे द्वार  
 
 === "Hindi"  
@@ -63,4 +63,4 @@ tags:
     Apna lahu bahaya  
     Paap ka bojh hamara tune saha  
     Jeevan ye hamara hai tera hi daan  
-    Moksh ke siva aur kya chahiye  
+    Moksh ke siva aur kya chahiye

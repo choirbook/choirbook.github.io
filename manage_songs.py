@@ -3,12 +3,14 @@
 import os
 import json
 import requests
+import yaml
 from typing import List, Dict, Optional
 from pathlib import Path
 import typer
 from rich.console import Console
 from rich.table import Table
 from rich.progress import Progress
+import frontmatter
 
 app = typer.Typer()
 console = Console()
@@ -20,7 +22,7 @@ DOCS_DIR = Path("docs")
 def fetch_airtable_data() -> List[Dict]:
     """Fetch song data from Airtable."""
     headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
-    response = requests.get(AIRTABLE_BASE_URL, headers=headers, params={"maxRecords": 100, "view": "Grid view"})
+    response = requests.get(AIRTABLE_BASE_URL, headers=headers, params={"maxRecords": 2, "view": "Grid view"})
     response.raise_for_status()
     return response.json()["records"]
 
@@ -31,20 +33,13 @@ def get_song_file_path(title: str, language: str) -> Optional[Path]:
     file_path = DOCS_DIR / language.lower() / filename
     return file_path if file_path.exists() else None
 
-def update_song_tags(file_path: Path, sung_as: List[str], occasion: List[str], song_type: List[str]) -> bool:
-    """Update the tags section in the markdown file."""
+def update_song_tags(file_path: Path, sung_as: List[str], occasion: List[str], song_type: List[str]) -> tuple[bool, str]:
+    """Update the tags section in the markdown file using python-frontmatter."""
+    error = None
     try:
-        content = file_path.read_text()
-        
-        # Extract frontmatter
-        if not content.startswith("---"):
-            return False
-            
-        parts = content.split("---", 2)
-        if len(parts) < 3:
-            return False
-            
-        # Process tags
+        post = frontmatter.load(file_path)
+        new_content = post.content
+
         tags = set()
         if sung_as:
             tags.update(sung_as)
@@ -52,20 +47,21 @@ def update_song_tags(file_path: Path, sung_as: List[str], occasion: List[str], s
             tags.update(occasion)
         if song_type:
             tags.update(song_type)
-            
-        # Create new frontmatter
-        new_frontmatter = "---\ntags:\n"
-        for tag in sorted(tags):
-            new_frontmatter += f"  - {tag}\n"
-        new_frontmatter += "---\n"
+
+        # Split content into lines, add 2 spaces to non-empty lines, and rejoin
+        new_content = '\n'.join(line + '  ' if line.strip() else line for line in post.content.splitlines())
+
+        if post['tags'] == sorted(tags) and post.content == new_content:
+            return False, error
         
-        # Update file
-        new_content = new_frontmatter + parts[2]
-        file_path.write_text(new_content)
-        return True
+        post['tags'] = sorted(tags)
+        frontmatter.dump(post, file_path)
+
+        return True, error
     except Exception as e:
+        error = str(e)
         console.print(f"[red]Error updating {file_path}: {str(e)}[/red]")
-        return False
+        return False, error
 
 @app.command()
 def update():
@@ -78,10 +74,10 @@ def update():
         console.print(f"[red]Error fetching data from Airtable: {str(e)}[/red]")
         raise typer.Exit(1)
     
-    table = Table(title="Song Updates")
-    table.add_column("Title", style="cyan")
-    table.add_column("Status", style="green")
-    table.add_column("Details", style="yellow")
+    table = Table(title="Song Updates", show_header=True, header_style="bold magenta", box=None)
+    table.add_column("Status", style="green", width=8, justify="center")
+    table.add_column("Details", style="yellow", width=20, justify="left")
+    table.add_column("Title", style="cyan", width=80, no_wrap=False)
     
     with Progress() as progress:
         task = progress.add_task("[cyan]Processing songs...", total=len(records))
@@ -97,7 +93,7 @@ def update():
                 
             file_path = get_song_file_path(title, language)
             if not file_path:
-                table.add_row(title, "❌", "File not found")
+                table.add_row("🔴", "File not found", title)
                 missing_files.append(title)
                 progress.update(task, advance=1)
                 continue
@@ -106,22 +102,27 @@ def update():
             occasion = fields.get("Ocassion", [])
             song_type = fields.get("Type", [])
             
-            if update_song_tags(file_path, sung_as, occasion, song_type):
-                table.add_row(title, "✅", f"Updated {len(sung_as) + len(occasion) + len(song_type)} tags")
+            status, error = update_song_tags(file_path, sung_as, occasion, song_type)
+
+            if status:
+                table.add_row("🟡", f"Updated {len(sung_as) + len(occasion) + len(song_type)} tags", title)
             else:
-                table.add_row(title, "❌", "Failed to update tags")
+                if error:
+                    table.add_row("🔴", f"Failed to update tags: {error}", title)
+                else:
+                    table.add_row("🟢", "No update needed", title)
             
             progress.update(task, advance=1)
     
     console.print(table)
 
-    # Print missing files summary
-    if missing_files:
-        console.print("\n[bold red]Songs missing in the filesystem:[/bold red]")
-        for title in missing_files:
-            console.print(f"- {title}")
-    else:
-        console.print("\n[bold green]All songs found in the filesystem![/bold green]")
+    # # Print missing files summary
+    # if missing_files:
+    #     console.print("\n[bold red]Songs missing in the filesystem:[/bold red]")
+    #     for title in missing_files:
+    #         console.print(f"- {title}")
+    # else:
+    #     console.print("\n[bold green]All songs found in the filesystem![/bold green]")
 
 def main():
     app()

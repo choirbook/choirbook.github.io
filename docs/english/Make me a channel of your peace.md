@@ -1,10 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
 # Make me a channel of your peace  
   
 Make me a channel of your peace,  
@@ -25,4 +23,4 @@ And where there's sadness, every joy.
 Make me a channel of your peace,  
 It is in pardoning that we are pardoned,  
 In giving to all men that we receive,  
-And in dying that we're born to eternal life  
+And in dying that we're born to eternal life

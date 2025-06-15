@@ -1,10 +1,8 @@
 ---
 tags:
-  - Carol
-  - Christmas
+- Carol
+- Christmas
 ---
-
-
 
 # Feliz Navidad  
   
@@ -16,5 +14,4 @@ Próspero año y felicidad (2)
 We wanna wish you a merry Christmas!  
 We wanna wish you a merry Christmas!  
 We wanna wish you a merry Christmas!  
-From the bottom of our hearts (2)  
-  
+From the bottom of our hearts (2)

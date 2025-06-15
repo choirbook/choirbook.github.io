@@ -1,10 +1,8 @@
 ---
 tags:
-  - Hosanna
+- Hosanna
 ---
 
-
-  
 # Holy, Holy Lord God of hosts  
   
 Holy, Holy Lord God of Hosts   
@@ -14,5 +12,4 @@ Hosanna, Hosanna in the highest
 Blessed is he who comes in the    
 name of the Lord   
 Hosanna, Hosanna in the highest (2)   
-Hosanna!   
-  
+Hosanna!

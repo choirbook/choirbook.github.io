@@ -1,8 +1,9 @@
 ---
 tags:
-  - Psalms
+- Christmas
+- Psalms
 ---
-  
+
 # आवाज़ उठाएंगे  
 
 === "Hindi"
@@ -42,4 +43,4 @@ tags:
     Na dekh saka humko tu paap ke saagar mein  
     Aur banke manushya aaya aakash mein saagar mein  
     Mukti ka tu daata hai duniya ko batayenge  
-    Hey Yeshu mahaan...  
+    Hey Yeshu mahaan...

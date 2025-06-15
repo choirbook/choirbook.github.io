@@ -1,10 +1,7 @@
 ---
 tags:
-  - Recessional
+- Recessional
 ---
-
-
-
 
 # As I kneel before you
 
@@ -36,4 +33,4 @@ Is lost in your embrace.
 Ave Maria,  
 Gratia plena,  
 Dominus tecum,  
-Benedicta tu.  
+Benedicta tu.

@@ -1,10 +1,8 @@
 ---
 tags:
-  - Entrance
+- Entrance
 ---
 
-
-  
 # We are gathering together  
   
 We are gathering together unto Him  
@@ -14,4 +12,4 @@ We are gathering together unto Him
   
 We are Singing..  
 We are Offering..  
-We are Praying..  
+We are Praying..

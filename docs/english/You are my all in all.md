@@ -1,10 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
 # You are my all in all  
   
 You are my strength when I am weak  
@@ -29,4 +27,4 @@ You are my all in all
 Jesus, Lamb of God  
 Worthy is Your name  
 Jesus, Lamb of God  
-Worthy is Your name  
+Worthy is Your name

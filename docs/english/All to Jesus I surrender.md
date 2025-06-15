@@ -1,10 +1,7 @@
 ---
 tags:
-  - Offertory
+- Offertory
 ---
-
-
-
 
 # All to Jesus I surrender
 

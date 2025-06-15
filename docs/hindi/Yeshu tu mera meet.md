@@ -1,8 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
-  
+
 # येसु तू मेरा मीत  
 
 === "Hindi"  
@@ -25,4 +25,4 @@ tags:
     Swargiya bhojan hamara, tu hai kripa dhara  
 
     Ye dil mera hai soona, is dil mein tu aa jana  
-    Prem ki jyoti jalana, jeevan ka hai jharna  
+    Prem ki jyoti jalana, jeevan ka hai jharna

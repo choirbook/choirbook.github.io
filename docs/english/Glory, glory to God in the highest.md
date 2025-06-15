@@ -1,10 +1,7 @@
 ---
 tags:
-  - Gloria
+- Gloria
 ---
-
-
-  
 
 # Glory, glory to God in the highest  
 
@@ -38,4 +35,4 @@ In the glory of God the Father
 Glory, glory to God in the highest  
 Glory, glory to God in the highest  
 And on earth, peace to people of good will  
-Amen  
+Amen

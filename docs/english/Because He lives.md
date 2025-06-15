@@ -1,11 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
-  
 # Because He lives  
   
 Because He lives, I can face tomorrow  
@@ -31,4 +28,4 @@ I’ll see the lights of glory and l'll know He reigns
 Because He lives, I can face tomorrow  
 Because He lives, all fear is gone  
 Because I know-w-w He holds the future  
-And life is worth a living, just because He lives  
+And life is worth a living, just because He lives

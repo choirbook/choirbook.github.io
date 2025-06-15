@@ -1,13 +1,10 @@
 ---
 tags:
-  - Carol
-  - Christmas
-  - Offertory
+- Carol
+- Christmas
+- Offertory
 ---
 
-
-  
-  
 # Drummer Boy  
   
 Come they told me pa rum pum pum pum,  
@@ -32,4 +29,4 @@ I played my drum for Him pa rum pum pum pum,
 I played my best for Him pa rum pum pum pum,  
 rum pum pum pum, rum pum pum pum.  
 Then He smiled at me pa rum pum pum pum  
-Me and my drum.  
+Me and my drum.

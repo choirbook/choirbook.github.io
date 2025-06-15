@@ -1,8 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
-  
+
 # जब जब हम गायेंगे  
 
 === "Hindi"  
@@ -41,4 +41,4 @@ tags:
     Saari duniya mein charon pahar  
     Swar ke raja tera samman ho  
     Yug-yug teri hi keerti chalein  
-    Jeevan hamari teri pehchaan ho  
+    Jeevan hamari teri pehchaan ho

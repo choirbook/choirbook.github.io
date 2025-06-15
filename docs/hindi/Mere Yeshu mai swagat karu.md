@@ -1,10 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
 # मेरे येसु मैं स्वागत करूँ  
 
 === "Hindi"  
@@ -37,4 +35,4 @@ tags:
 
     Goonge jo aaye the sunne vachan tune unhein swar de diya  
     Andhe jo aaye the sunne vachan tune unhein darshan diya  
-    Mere Yeshu in sabka dil khushiyon se tune bhara - 2  
+    Mere Yeshu in sabka dil khushiyon se tune bhara - 2

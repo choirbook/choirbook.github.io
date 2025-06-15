@@ -1,8 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
-  
+
 # तू दिल में हैं प्रभु मधूर  
   
 === "Hindi"  
@@ -51,4 +51,4 @@ tags:
     Main teri puja har kshan karunga,  
     Tu mere dil mein har kshan rahein,  
     Main tera sakshi ban jaun daata,  
-    Dil mera darpan rahe  
+    Dil mera darpan rahe

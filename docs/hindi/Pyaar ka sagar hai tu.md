@@ -1,10 +1,8 @@
 ---
 tags:
-  - Communion
+- Communion
 ---
 
-
-  
 # प्यार का सागर है तू  
 
 === "Hindi"  
@@ -47,4 +45,4 @@ tags:
     Jag mein sada apni maata pyaar ki moorat hai  
     Janani ki mamta hamesha Ishwar ki didaar hai  
     Maata agar bhool bhi jaye apni hi santaan ko  
-    Par tera yeh pyaar kabhi bhool na jaye hamko  
+    Par tera yeh pyaar kabhi bhool na jaye hamko

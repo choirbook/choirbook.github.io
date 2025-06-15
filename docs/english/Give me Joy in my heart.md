@@ -1,10 +1,7 @@
 ---
 tags:
-  - Entrance
+- Entrance
 ---
-
-
-  
 
 # Give me Joy in my heart  
 
@@ -21,4 +18,4 @@ Sing hosanna to the King.
 Give me oil in my heart, keep me burning,  
 Give me oil in my heart, I pray.  
 Give me joy in my heart, keep me burning,  
-Keep me burning till the end of day.  
+Keep me burning till the end of day.

@@ -1,11 +1,9 @@
 ---
 tags:
-  - Mother Mary
-  - Recessional
+- Mother Mary
+- Recessional
 ---
 
-
-  
 # नमो ए मेरी माँ  
 
 === "Hindi"  
@@ -34,4 +32,4 @@ tags:
 
     Teri sharan mein dheen jo aaye maa  
     Paate daya ka daan ae meri maa  
-    Sagar daya ka tu hai meri maa  
+    Sagar daya ka tu hai meri maa

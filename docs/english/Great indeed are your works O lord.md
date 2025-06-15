@@ -1,10 +1,8 @@
 ---
 tags:
-  - Psalms
+- Psalms
 ---
 
-
-  
 # Great indeed are your works O lord  
   
 Great indeed are your works O lord  
@@ -24,4 +22,4 @@ All the nations gather
 You lead us all by the hand  
 To the heavenly kingdom  
 Then at the end of all time  
-You will come in glory.  
+You will come in glory.

@@ -1,11 +1,9 @@
 ---
 tags:
-  - Communion
-  - Recessional
+- Communion
+- Recessional
 ---
 
-
-  
 # Shout to the Lord  
   
 My Jesus, my Saviour   
@@ -46,4 +44,4 @@ I sing for joy at the works of Your hand
 Forever I'll love You, forever I'll stand   
 Nothing compares to the promise I have, in You    
 Nothing compares to the promise I have, in You    
-Nothing compares to the promise I have, in You    
+Nothing compares to the promise I have, in You

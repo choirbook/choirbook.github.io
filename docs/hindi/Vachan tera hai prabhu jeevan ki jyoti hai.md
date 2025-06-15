@@ -1,10 +1,8 @@
 ---
 tags:
-  - Acclamation
+- Acclamation
 ---
 
-
-  
 # वचन तेरा हे प्रभु जीवन की ज्याति है  
 
 === "Hindi"  
@@ -25,4 +23,4 @@ tags:
     Madhur vachan tera dil se main manunga. 2  
 
     Bhookh mitaata hai, amar vachan tera  
-    Pyaas bujhaata hai meetha vachan tera 2  
+    Pyaas bujhaata hai meetha vachan tera 2

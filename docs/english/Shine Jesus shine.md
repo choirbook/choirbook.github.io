@@ -1,9 +1,7 @@
 ---
 tags:
-  - Recessional
+- Recessional
 ---
-
-
 
 # Shine Jesus shine    
     
@@ -29,4 +27,4 @@ From the shadows into your radiance
 By the blood I may enter your brightness    
 Search me, try me, consume all my darkness    
 Shine on me    
-Shine on me.    
+Shine on me.

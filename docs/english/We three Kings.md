@@ -1,12 +1,10 @@
 ---
 tags:
-  - Entrance
-  - Epiphany
-  - Recessional
+- Entrance
+- Epiphany
+- Recessional
 ---
 
-
-  
 # We three Kings  
   
 We three kings of Orient are  
@@ -57,4 +55,4 @@ Sounds through the earth and skies.
 O star of wonder, star of night,  
 Star with royal beauty bright,  
 Westward leading, still proceeding,  
-Guide us to thy perfect Light.  
+Guide us to thy perfect Light.

@@ -1,9 +1,8 @@
 ---
 tags:
-  - Entrance
-  - Holy Spirit
+- Entrance
+- Holy Spirit
 ---
-
 
 # As we gather in this place today
 
@@ -25,4 +24,4 @@ Be glorified in everything we say, oh have Your way
 This is Your house, Your home  
 We welcome You, Lord, we welcome You  
 This is Your house, Your home  
-We welcome You today   
+We welcome You today

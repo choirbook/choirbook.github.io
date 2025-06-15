@@ -1,10 +1,7 @@
 ---
 tags:
-  - Offertory
+- Offertory
 ---
-
-
-  
 
 # Blest are You Lord  
 
@@ -23,4 +20,4 @@ Blest are You, Lord God of all creation
 Thanks to Your goodness  
 this wine we offer  
 Fruit of the vine, work of our hands  
-It will become the cup of joy.  
+It will become the cup of joy.

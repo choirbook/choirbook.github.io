@@ -1,10 +1,8 @@
 ---
 tags:
-  - Good Friday
+- Good Friday
 ---
 
-
-  
 # There is no problem too big  
   
 There is no problem too big, God cannot solve it.  
@@ -20,4 +18,4 @@ Upon his shoulders
 I know, my sister, that he will carry you.  
   
 He said, "Come unto me all who are wearied,  
-And I will give you rest".  
+And I will give you rest".

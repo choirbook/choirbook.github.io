@@ -1,11 +1,9 @@
 ---
 tags:
-  - Entrance
-  - Recessional
+- Entrance
+- Recessional
 ---
 
-
-  
 # What a friend we have in Jesus  
   
 What a friend we have in Jesus,  
@@ -32,4 +30,4 @@ Take it to the Lord in prayer.
 Do thy friends despise, forsake thee?  
 Take it to the Lord in prayer;  
 In His arms He'll take and shield thee  
-Thou wilt find a solace there.  
+Thou wilt find a solace there.

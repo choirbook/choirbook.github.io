@@ -1,9 +1,9 @@
 ---
 tags:
-  - Carol
-  - Christmas
+- Carol
+- Christmas
 ---
-  
+
 # ख़ुशी मनाओ गाओ रे  
   
 === "Hindi"  
@@ -32,5 +32,4 @@ tags:
     Janma hai Yeshu raja..  
   
     Khushi manao gaao re  
-    Janma hai Yeshu raja  
-  
+    Janma hai Yeshu raja
