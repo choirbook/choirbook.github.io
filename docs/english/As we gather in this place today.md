@@ -4,7 +4,7 @@ tags:
 - Holy Spirit
 ---
 
-# As we gather in this place today
+# As we gather in this place today  
 
 As we gather in this place today  
 Holy Spirit come and have Your way, have Your way  

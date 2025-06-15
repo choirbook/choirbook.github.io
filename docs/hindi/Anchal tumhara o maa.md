@@ -6,7 +6,7 @@ tags:
 
 # अंचल तुम्हारा ओ माँ  
 
-=== "Hindi"
+=== "Hindi"  
 
     अंचल तुम्हारा ओ माँ  
     आशीष देता सदा से  
@@ -23,7 +23,7 @@ tags:
     तुहि बनी येशु माता  
     हमारी भी बन तूही माता  
 
-=== "English"
+=== "English"  
 
     Anchal tumhara o maa  
     Ashish deta sada se  
@@ -34,7 +34,7 @@ tags:
     Jo bhi aaye dwaar tihare  
     Sab ko tu deti sayaa  
     Sab ko tu deti chaya  
- 
+
     Jag ki janani he Mata Maria  
     Har din har pal tujh ko chadate  
     Tu hi bani Yeshu Mata  

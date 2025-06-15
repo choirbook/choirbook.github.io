@@ -41,7 +41,7 @@ He gave us at the cross
 I hope that you have not  
 Too quickly forgotten that  
 Our God is an awesome God  
-  
+
 Our God is an awesome God  
 He reigns from heaven above  
 With wisdom, power, and love  

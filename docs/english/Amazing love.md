@@ -3,7 +3,7 @@ tags:
 - Communion
 ---
 
-# Amazing Love
+# Amazing Love  
 
 I'm forgiven because You were forsaken  
 I'm accepted, You were condemned  
