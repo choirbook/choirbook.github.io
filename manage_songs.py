@@ -13,7 +13,6 @@ from rich.console import Console
 from rich.table import Table
 from rich.progress import Progress
 import frontmatter
-import difflib
 
 # Configuration constants
 class Config:
@@ -88,6 +87,33 @@ class AirtableClient:
             return response.json()["records"]
         except requests.RequestException as e:
             raise AirtableAPIError(f"Failed to fetch data from Airtable: {str(e)}")
+    
+    def update_records(self, records: List[Dict]) -> Dict:
+        """Update multiple records in Airtable, batching requests in groups of 10."""
+        if not records:
+            return {"records": []}
+        
+        batch_size = 10
+        all_updated_records = []
+        
+        try:
+            headers = {**self.headers, "Content-Type": "application/json"}
+            
+            # Process records in batches of 10
+            for i in range(0, len(records), batch_size):
+                batch = records[i:i + batch_size]
+                data = {"records": batch}
+                
+                response = requests.patch(self.base_url, headers=headers, json=data)
+                response.raise_for_status()
+                
+                batch_result = response.json()
+                all_updated_records.extend(batch_result.get("records", []))
+            
+            return {"records": all_updated_records}
+            
+        except requests.RequestException as e:
+            raise AirtableAPIError(f"Failed to update records in Airtable: {str(e)}")
 
 class SongFileManager:
     """Handles file operations for song markdown files."""
@@ -100,6 +126,14 @@ class SongFileManager:
         filename = f"{title}.md"
         file_path = self.docs_dir / language.lower() / filename
         return file_path if file_path.exists() else None
+    
+    def read_song_lyrics(self, file_path: Path) -> Optional[str]:
+        """Read song lyrics from a markdown file."""
+        try:
+            post = frontmatter.load(file_path)
+            return post.content.strip() if post.content else None
+        except Exception as e:
+            raise FileOperationError(f"Failed to read lyrics from {file_path}: {str(e)}")
     
     def update_song_tags(self, file_path: Path, new_tags: set) -> Tuple[bool, str]:
         """Update the tags section in the markdown file."""
@@ -224,6 +258,116 @@ class SongUpdater:
         results = self._process_songs(records)
         self._display_results(results)
     
+    def sync_lyrics_to_airtable(self) -> None:
+        """Sync lyrics from filesystem back to Airtable."""
+        self.console.print("[bold blue]Syncing lyrics to Airtable...[/bold blue]")
+        
+        try:
+            records = self.airtable_client.fetch_songs()
+        except AirtableAPIError as e:
+            self.console.print(f"[red]Error fetching data from Airtable: {str(e)}[/red]")
+            raise typer.Exit(1)
+        
+        results = self._sync_lyrics_process(records)
+        self._display_sync_results(results)
+    
+    def _sync_lyrics_process(self, records: List[Dict]) -> List[UpdateResult]:
+        """Process lyrics sync for all songs."""
+        results = []
+        records_to_update = []
+        
+        with Progress() as progress:
+            task = progress.add_task("[cyan]Processing lyrics sync...", total=len(records))
+            
+            for record in records:
+                song_data = self.parser.parse_record(record)
+                if not song_data:
+                    progress.update(task, advance=1)
+                    continue
+                
+                result, update_record = self._process_single_lyrics_sync(song_data, record)
+                results.append(result)
+                
+                if update_record:
+                    records_to_update.append(update_record)
+                
+                progress.update(task, advance=1)
+        
+        # Batch update records to Airtable
+        if records_to_update:
+            try:
+                self.console.print(f"[bold green]Updating {len(records_to_update)} records in Airtable...[/bold green]")
+                self.airtable_client.update_records(records_to_update)
+                self.console.print("[bold green]✓ Successfully updated records in Airtable[/bold green]")
+            except AirtableAPIError as e:
+                self.console.print(f"[red]Error updating records in Airtable: {str(e)}[/red]")
+                # Mark all pending updates as failed
+                for result in results:
+                    if result.status == UpdateStatus.UPDATED:
+                        result.status = UpdateStatus.FAILED
+                        result.message = "Failed to sync to Airtable"
+        
+        return results
+    
+    def _process_single_lyrics_sync(self, song_data: SongData, original_record: Dict) -> Tuple[UpdateResult, Optional[Dict]]:
+        """Process lyrics sync for a single song."""
+        file_path = self.file_manager.get_song_file_path(song_data.title, song_data.language)
+        
+        if not file_path:
+            return UpdateResult(UpdateStatus.NOT_FOUND, "File not found", song_data.title), None
+        
+        try:
+            lyrics = self.file_manager.read_song_lyrics(file_path)
+            if not lyrics:
+                return UpdateResult(UpdateStatus.FAILED, "No lyrics content found", song_data.title), None
+            
+            # Check if lyrics field already exists and has content
+            existing_lyrics = original_record.get("fields", {}).get("lyrics", "")
+            if existing_lyrics and existing_lyrics.strip() == lyrics:
+                return UpdateResult(UpdateStatus.SUCCESS, "Lyrics already up to date", song_data.title), None
+            
+            # Prepare update record
+            update_record = {
+                "id": original_record["id"],
+                "fields": {
+                    # "title": song_data.title,
+                    # "Added to Choirbook": "Yes",
+                    # "language": song_data.language,
+                    "Lyrics": lyrics
+                }
+            }
+            
+            # Add existing tags to preserve them
+            if song_data.sung_as:
+                update_record["fields"]["Sung as"] = song_data.sung_as
+            if song_data.occasion:
+                update_record["fields"]["Ocassion"] = song_data.occasion
+            if song_data.song_type:
+                update_record["fields"]["Type"] = song_data.song_type
+            
+            message = "Lyrics will be synced" if not existing_lyrics else "Lyrics will be updated"
+            return UpdateResult(UpdateStatus.UPDATED, message, song_data.title), update_record
+            
+        except FileOperationError as e:
+            return UpdateResult(UpdateStatus.FAILED, str(e), song_data.title), None
+    
+    def _display_sync_results(self, results: List[UpdateResult]) -> None:
+        """Display the lyrics sync results in a formatted table."""
+        table = Table(
+            title="Lyrics Sync Results", 
+            show_header=True, 
+            header_style="bold magenta", 
+            box=None
+        )
+        table.add_column("Status", style="green", width=10, justify="center")
+        table.add_column("Details", style="yellow", width=30, justify="center")
+        table.add_column("Title", style="cyan", width=80, no_wrap=False)
+        
+        for result in results:
+            table.add_row(result.status.value, result.message, result.title)
+        
+        self.console.print(table)
+    
     def _process_songs(self, records: List[Dict]) -> List[UpdateResult]:
         """Process all song records and return results."""
         results = []
@@ -278,6 +422,12 @@ def update():
     """Update song tags from Airtable data."""
     updater = SongUpdater(console)
     updater.update_songs()
+
+@app.command("sync-lyrics")
+def sync_lyrics():
+    """Sync lyrics from filesystem back to Airtable."""
+    updater = SongUpdater(console)
+    updater.sync_lyrics_to_airtable()
 
 def main():
     app()
