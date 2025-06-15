@@ -3,9 +3,11 @@ site_url: https://choirbook.github.io/
 theme:
   name: material
   features:
+    - content.action.edit
     # - navigation.tabs
     # - navigation.sections
     # - navigation.expand
+    # - navigation.footer
     - navigation.top
     # - search.highlight
     - search.share
@@ -55,6 +57,11 @@ plugins:
         - hi
 
 extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/choirbook/choirbook.github.io
+      name: Choir Book on GitHub
+
   analytics:
     provider: google
     property: G-KC4RXKCFS2
@@ -62,6 +69,6 @@ extra:
       title: Cookie usage
       description: >-
         We use cookies to recognize your repeated visits and preferences, as well
-        as to measure the effectiveness of our documentation and whether users
+        as to measure the effectiveness of our website and whether users
         find what they search for. With your consent, you're helping us to
-        make our documentation better. 
+        make this website better.
