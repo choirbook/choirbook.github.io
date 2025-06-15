@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from enum import Enum
 import typer
 from rich.console import Console
+
 from rich.table import Table
 from rich.progress import Progress
 import frontmatter
@@ -196,6 +197,34 @@ class SongFileManager:
         except Exception as e:
             raise FileOperationError(f"Failed to normalize content: {str(e)}")
     
+    def create_song_file(self, song_data: SongData, lyrics: str) -> UpdateResult:
+        """Create a new song file with tags and lyrics."""
+        try:
+            # Create language directory if it doesn't exist
+            lang_dir = self.docs_dir / song_data.language.lower()
+            lang_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Create file path
+            filename = f"{song_data.title}.md"
+            file_path = lang_dir / filename
+            
+            # Check if file already exists
+            if file_path.exists():
+                return UpdateResult(UpdateStatus.SUCCESS, "File already exists", song_data.title)
+            
+            # Create frontmatter post
+            post = frontmatter.Post(content=lyrics)
+            post['tags'] = sorted(song_data.all_tags) if song_data.all_tags else []
+            
+            # Write the file
+            frontmatter.dump(post, file_path)
+            
+            tag_info = f"with {len(song_data.all_tags)} tags" if song_data.all_tags else "without tags"
+            return UpdateResult(UpdateStatus.UPDATED, f"Created file {tag_info}", song_data.title)
+            
+        except Exception as e:
+            return UpdateResult(UpdateStatus.FAILED, f"Failed to create file: {str(e)}", song_data.title)
+    
     def update_song_file(self, file_path: Path, song_data: SongData) -> UpdateResult:
         """Update both tags and content formatting for a song file."""
         try:
@@ -271,6 +300,19 @@ class SongUpdater:
         results = self._sync_lyrics_process(records)
         self._display_sync_results(results)
     
+    def sync_from_airtable(self) -> None:
+        """Sync songs from Airtable to filesystem for entries that don't exist locally."""
+        self.console.print("[bold blue]Syncing songs from Airtable to filesystem...[/bold blue]")
+        
+        try:
+            records = self.airtable_client.fetch_songs()
+        except AirtableAPIError as e:
+            self.console.print(f"[red]Error fetching data from Airtable: {str(e)}[/red]")
+            raise typer.Exit(1)
+        
+        results = self._sync_from_airtable_process(records)
+        self._display_sync_results(results)
+    
     def _sync_lyrics_process(self, records: List[Dict]) -> List[UpdateResult]:
         """Process lyrics sync for all songs."""
         results = []
@@ -308,6 +350,41 @@ class SongUpdater:
                         result.message = "Failed to sync to Airtable"
         
         return results
+    
+    def _sync_from_airtable_process(self, records: List[Dict]) -> List[UpdateResult]:
+        """Process sync from Airtable to filesystem for missing songs."""
+        results = []
+        
+        with Progress() as progress:
+            task = progress.add_task("[cyan]Processing songs from Airtable...", total=len(records))
+            
+            for record in records:
+                song_data = self.parser.parse_record(record)
+                if not song_data:
+                    progress.update(task, advance=1)
+                    continue
+                
+                result = self._process_single_airtable_sync(song_data, record)
+                results.append(result)
+                progress.update(task, advance=1)
+        
+        return results
+    
+    def _process_single_airtable_sync(self, song_data: SongData, record: Dict) -> UpdateResult:
+        """Process a single song from Airtable to create file if it doesn't exist."""
+        # Check if file already exists
+        file_path = self.file_manager.get_song_file_path(song_data.title, song_data.language)
+        
+        if file_path:
+            return UpdateResult(UpdateStatus.SUCCESS, "File already exists", song_data.title)
+        
+        # Check if lyrics exist in Airtable
+        lyrics = record.get("fields", {}).get("Lyrics", "")
+        if not lyrics or not lyrics.strip():
+            return UpdateResult(UpdateStatus.FAILED, "No lyrics in Airtable", song_data.title)
+        
+        # Create the file
+        return self.file_manager.create_song_file(song_data, lyrics.strip())
     
     def _process_single_lyrics_sync(self, song_data: SongData, original_record: Dict) -> Tuple[UpdateResult, Optional[Dict]]:
         """Process lyrics sync for a single song."""
@@ -428,6 +505,12 @@ def sync_lyrics():
     """Sync lyrics from filesystem back to Airtable."""
     updater = SongUpdater(console)
     updater.sync_lyrics_to_airtable()
+
+@app.command("sync-from-airtable")
+def sync_from_airtable():
+    """Sync songs from Airtable to filesystem for entries that don't exist locally."""
+    updater = SongUpdater(console)
+    updater.sync_from_airtable()
 
 def main():
     app()
