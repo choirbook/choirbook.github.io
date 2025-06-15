@@ -1,9 +1,9 @@
----    
-tags:    
-  - Christmas    
-  - Carol      
----    
-  
+---
+tags:
+  - Carol
+  - Christmas
+---
+
 # Feliz Navidad  
   
 Feliz Navidad,  

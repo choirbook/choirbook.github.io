@@ -1,7 +1,8 @@
----  
-tags:  
-  - Hosanna  
----  
+---
+tags:
+  - Hosanna
+---
+  
 # Holy, Holy Lord God of hosts  
   
 Holy, Holy Lord God of Hosts   

@@ -1,8 +1,8 @@
 ---
 tags:
   - Offertory
-  - Communion
 ---
+
 
 # All to Jesus I surrender
 

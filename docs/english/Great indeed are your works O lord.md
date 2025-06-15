@@ -1,7 +1,8 @@
----  
-tags:  
-  - Psalms  
----  
+---
+tags:
+  - Psalms
+---
+  
 # Great indeed are your works O lord  
   
 Great indeed are your works O lord  

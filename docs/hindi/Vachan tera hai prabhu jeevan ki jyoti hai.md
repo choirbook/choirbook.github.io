@@ -1,7 +1,8 @@
----  
-tags:  
-  - Acclamation  
----  
+---
+tags:
+  - Acclamation
+---
+  
 # वचन तेरा हे प्रभु जीवन की ज्याति है  
 
 === "Hindi"  

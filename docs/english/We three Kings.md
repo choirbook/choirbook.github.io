@@ -1,9 +1,10 @@
----  
-tags:  
-  - Entrance  
-  - Recessional  
-  - Epiphany  
----  
+---
+tags:
+  - Entrance
+  - Epiphany
+  - Recessional
+---
+  
 # We three Kings  
   
 We three kings of Orient are  

@@ -1,2 +1,5 @@
 mkdocs-material>=9.5.0
-mkdocs-material-extensions>=1.1.1 
+mkdocs-material-extensions>=1.1.1
+typer>=0.9.0
+rich>=13.0.0
+requests>=2.31.0

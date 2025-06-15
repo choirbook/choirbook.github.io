@@ -1,8 +1,9 @@
----  
-tags:  
-  - Entrance  
-  - Recessional  
----  
+---
+tags:
+  - Entrance
+  - Recessional
+---
+  
 # What a friend we have in Jesus  
   
 What a friend we have in Jesus,  

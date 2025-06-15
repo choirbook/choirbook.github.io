@@ -1,8 +1,9 @@
----  
-tags:  
-  - Christmas  
-  - Carol  
----  
+---
+tags:
+  - Carol
+  - Christmas
+---
+  
 # We wish you a Merry Christmas  
   
 We wish you a merry Christmas,  

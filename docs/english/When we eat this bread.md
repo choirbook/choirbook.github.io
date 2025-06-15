@@ -1,7 +1,8 @@
----  
-tags:  
-  - Proclamation  
----  
+---
+tags:
+  - Proclamation
+---
+  
 # When we eat this bread  
   
 When we eat this bread  

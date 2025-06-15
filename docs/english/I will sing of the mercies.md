@@ -1,7 +1,8 @@
----  
-tags:  
-  - Psalms  
----  
+---
+tags:
+  - Psalms
+---
+  
 # I will sing of the mercices  
   
 I will sing of the mercies of the Lord for ever  

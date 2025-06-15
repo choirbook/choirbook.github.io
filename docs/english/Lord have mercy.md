@@ -1,7 +1,8 @@
----  
-tags:  
-  - Lord have mercy  
----  
+---
+tags:
+  - Lord have mercy
+---
+  
 # Lord have mercy  
   
 Lord, have mercy, Lord, have mercy  

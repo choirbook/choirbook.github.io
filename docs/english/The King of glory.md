@@ -1,8 +1,9 @@
----  
-tags:  
-  - Entrance  
-  - Palm Sunday  
----  
+---
+tags:
+  - Entrance
+  - Palm Sunday
+---
+  
 # The King of glory  
   
 The King of glory comes, the nation rejoices;  

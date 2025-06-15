@@ -1,7 +1,8 @@
----  
-tags:  
-  - Entrance  
----  
+---
+tags:
+  - Entrance
+---
+  
 # We are gathering together  
   
 We are gathering together unto Him  

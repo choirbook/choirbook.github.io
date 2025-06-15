@@ -1,7 +1,8 @@
----  
-tags:  
-  - Acclamation  
----  
+---
+tags:
+  - Acclamation
+---
+  
 # Thy Word  
   
 Thy Word is a lamp unto my feet  

@@ -1,7 +1,8 @@
----  
-tags:  
-  - Lamb of God  
----  
+---
+tags:
+  - Lamb of God
+---
+  
 # Lamb of God, O Jesus Christ  
   
 Lamb of God, O Jesus Christ  

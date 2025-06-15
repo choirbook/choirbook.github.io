@@ -1,7 +1,8 @@
----  
-tags:  
-  - Communion  
----  
+---
+tags:
+  - Communion
+---
+  
 # Make me a channel of your peace  
   
 Make me a channel of your peace,  

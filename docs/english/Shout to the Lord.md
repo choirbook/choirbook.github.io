@@ -1,8 +1,9 @@
----  
-tags:  
-  - Communion  
-  - Recessional  
----  
+---
+tags:
+  - Communion
+  - Recessional
+---
+  
 # Shout to the Lord  
   
 My Jesus, my Saviour   

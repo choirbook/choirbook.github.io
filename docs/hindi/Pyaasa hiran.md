@@ -1,7 +1,8 @@
----  
-tags:  
-  - Psalms  
----  
+---
+tags:
+  - Psalms
+---
+  
 # प्यासा हिरन  
 
 === "Hindi"  
