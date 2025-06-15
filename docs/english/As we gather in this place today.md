@@ -24,19 +24,4 @@ Be glorified in everything we say, oh have Your way
 This is Your house, Your home  
 We welcome You, Lord, we welcome You  
 This is Your house, Your home  
-We welcome You today  
-
-As we praise (as we praise), oh Lord draw near  
-It's Your voice, we long to hear  
-Oh we long to hear  
-This is Your house, Your home  
-We welcome You, Lord, we welcome You  
-This is Your house, Your home  
-We welcome You today (this is Your house)  
-
-This is Your house, Your home  
-We welcome You, Lord, we welcome You  
-This is Your house, Your home  
-We welcome You today  
-We welcome You today  
 We welcome You today   
