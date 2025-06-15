@@ -13,14 +13,14 @@ from rich.progress import Progress
 app = typer.Typer()
 console = Console()
 
-AIRTABLE_API_KEY = "patVxK8cJcu5vZfqL.deece2a43521a3b6970db409347b2691f9ea81b58cb03dfa0b2933497cdcc1ab"
+AIRTABLE_API_KEY = os.getenv("AIRTABLE_API_KEY")
 AIRTABLE_BASE_URL = "https://api.airtable.com/v0/app55zD0LzyJm1Sx3/Songs"
 DOCS_DIR = Path("docs")
 
 def fetch_airtable_data() -> List[Dict]:
     """Fetch song data from Airtable."""
     headers = {"Authorization": f"Bearer {AIRTABLE_API_KEY}"}
-    response = requests.get(AIRTABLE_BASE_URL, headers=headers, params={"maxRecords": 50, "view": "Grid view"})
+    response = requests.get(AIRTABLE_BASE_URL, headers=headers, params={"maxRecords": 100, "view": "Grid view"})
     response.raise_for_status()
     return response.json()["records"]
 

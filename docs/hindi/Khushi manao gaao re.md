@@ -1,8 +1,9 @@
----  
-tags:  
-  - Christmas  
-  - Carol  
----  
+---
+tags:
+  - Carol
+  - Christmas
+---
+  
 # ख़ुशी मनाओ गाओ रे  
   
 === "Hindi"  

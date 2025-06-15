@@ -4,6 +4,7 @@ tags:
   - Holy Spirit
 ---
 
+
 # As we gather in this place today
 
 As we gather in this place today  

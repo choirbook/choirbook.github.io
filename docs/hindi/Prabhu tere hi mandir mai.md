@@ -1,7 +1,8 @@
----  
-tags:  
-  - Offertory  
----  
+---
+tags:
+  - Offertory
+---
+  
 # प्रभु तेरे ही मन्दिर में  
 
 === "Hindi"  
