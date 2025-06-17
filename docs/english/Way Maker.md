@@ -1,5 +1,7 @@
 ---
-tags: []
+tags:
+- Communion
+- Praise & Worship
 ---
 
 # Way Maker  
@@ -23,11 +25,8 @@ You are here, healing every heart
 I worship You, I worship You  
 
 You are here, turning lives around  
-
 I worship You, I worship You  
-
 You are here, mending every heart  
-
 I worship You, I worship You  
 
 Even when I don’t see it, You’re working  

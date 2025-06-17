@@ -1,5 +1,9 @@
 ---
-tags: []
+tags:
+- Adoration
+- Communion
+- Entrance
+- Holy Spirit
 ---
 
 # Welcome Holy Spirit  
