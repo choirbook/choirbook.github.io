@@ -1,6 +1,7 @@
 ---
 tags:
 - Communion
+- Easter
 ---
 
 # Because He lives  
