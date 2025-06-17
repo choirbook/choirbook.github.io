@@ -1,5 +1,6 @@
 ---
 tags:
+- Communion
 - Good Friday
 ---
 

@@ -1,6 +1,8 @@
 ---
 tags:
+- Adoration
 - Communion
+- Praise & Worship
 - Psalms
 ---
 

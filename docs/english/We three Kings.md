@@ -1,5 +1,7 @@
 ---
 tags:
+- Carol
+- Christmas
 - Entrance
 - Epiphany
 - Recessional
